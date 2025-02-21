@@ -117,11 +117,11 @@
 // // const emojis = ['🐥','🐯','🐼']
 // // console.log(emojis.includes('🐴'))
 
-// const addItemBtn = document.getElementById("add-item-btn");
-// const itemInput = document.getElementById("item-input");
-// const list = document.getElementById("list");
+const addItemBtn = document.getElementById("add-item-btn");
+const itemInput = document.getElementById("item-input");
+const list = document.getElementById("list");
 
-// const shoppingList = [];
+const shoppingList = [];
 
 // addItemBtn.addEventListener("click", function () {
 //   /*
@@ -158,6 +158,43 @@
 // // ---------.map()--------------
 // // ---------.map()--------------
 // // ---------.map()--------------
+
+//Convert these Miles to KM!
+const distanceWalkedMilesArr = [140, 153, 161, 153, 128, 148];
+
+const conversionFactorMilesToKm = 1.6;
+
+//store map array in const => give anon function parameter distanceMiles
+// const distanceWalkedKmArr = distanceWalkedMilesArr.map(function (
+//   distanceMiles
+// ) {
+//   // -------------------
+//   //   console.log(distanceMiles); //logs each element in the array, except what gets logged out is element by element.
+//   // -------------------
+//   //   console.log(distanceMiles * conversionFactorMilesToKm); //converts miles to kilometers
+//   return distanceMiles * conversionFactorMilesToKm;//returns km array
+// });
+///////////////////////////////
+// const distanceWalkedKmArr = distanceWalkedMilesArr.map(function (
+//   distanceMiles,
+//   index //added index to the parameter
+// ) {
+//   return `Month ${index}: ${distanceMiles * conversionFactorMilesToKm}KM`;
+//   //added a string to make the console log out months+km at end
+// });
+
+// console.log(distanceWalkedKmArr); //returns km array
+
+// function convertMilesToKms() {
+//   return distanceWalkedMilesArr.map(function (distanceMiles, index) {
+//     return `Month ${index}: ${distanceMiles * conversionFactorMilesToKm}KM`;
+//   });
+// }
+// //function verison instead of saving it as a const
+// console.log(convertMilesToKms());
+
+// ---------the .map() challenge--------------
+// ---------the .map() challenge--------------
 
 // ---------------------------------------------------------------------
 
