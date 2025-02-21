@@ -1,4 +1,4 @@
-import { playlistArr } from '/playlist.js'
+import { playlistArr } from "/playlist.js";
 
 /*
 Challenge
@@ -7,11 +7,11 @@ Challenge
    ⚠️ Don't worry about the commas for now.
 */
 
-const playlistHtml = []
+const playlistHtml = [];
 
 for (let i = 0; i < playlistArr.length; i++) {
-    playlistHtml.push(
-`<section class="card">
+  playlistHtml.push(
+    `<section class="card">
     <div class="card-start">
         <img src="/images/${playlistArr[i].albumArt}">
     </div>
@@ -24,7 +24,7 @@ for (let i = 0; i < playlistArr.length; i++) {
     </div>
 </section>
     `
-    )
+  );
 }
 
-document.getElementById('container').innerHTML = playlistHtml
+document.getElementById("container").innerHTML = playlistHtml;
