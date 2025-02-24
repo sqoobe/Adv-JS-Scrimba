@@ -175,13 +175,13 @@ const conversionFactorMilesToKm = 1.6;
 //   return distanceMiles * conversionFactorMilesToKm;//returns km array
 // });
 ///////////////////////////////
-// const distanceWalkedKmArr = distanceWalkedMilesArr.map(function (
-//   distanceMiles,
-//   index //added index to the parameter
-// ) {
-//   return `Month ${index}: ${distanceMiles * conversionFactorMilesToKm}KM`;
-//   //added a string to make the console log out months+km at end
-// });
+// // // const distanceWalkedKmArr = distanceWalkedMilesArr.map(function (
+// // //   distanceMiles,
+// // //   index //added index to the parameter
+// // // ) {
+// // //   return `Month ${index}: ${distanceMiles * conversionFactorMilesToKm}KM`;
+// // //   //added a string to make the console log out months+km at end
+// // // });
 
 // console.log(distanceWalkedKmArr); //returns km array
 
@@ -194,8 +194,22 @@ const conversionFactorMilesToKm = 1.6;
 // console.log(convertMilesToKms());
 
 // ---------the .map() challenge--------------
-// ---------the .map() challenge--------------
+// .map() challenge er i egen mappe
+// ---------the .filter() method--------------
+// ---------the .filter() method--------------
+// ---------the .filter() method--------------
+// ---------the .filter() method--------------
+const ages = [1, 5, 9, 23, 56, 10, 47, 70, 10, 19, 23, 18];
 
+const adults = ages.filter(function (age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(adults.length);
 // ---------------------------------------------------------------------
 
 // ---------------------------------------------------------------------
