@@ -1,5 +1,6 @@
 // // ---------------------------------------------------------------------
 //
+import { studentsArr } from "/Users/Jacob/OneDrive/Oppgaver/Adv JS Scrimba/studentsArr";
 //  ÆDVÆNS JavaSkriptering
 //
 // ---------FOR of--------------
@@ -317,6 +318,9 @@ Challenge
 // ---------the .reduce() method with Objects--------------
 // ---------the .reduce() method with Objects--------------
 
+function calculateClassAverage(studentsArr) {}
+
+// console.log(calculateClassAverage(studentsArr))
 // ---------------------------------------------------------------------
 
 // ---------------------------------------------------------------------
