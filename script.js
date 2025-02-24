@@ -1,6 +1,6 @@
 // // ---------------------------------------------------------------------
 //
-import { studentsArr } from "/Users/Jacob/OneDrive/Oppgaver/Adv JS Scrimba/studentsArr";
+import { studentsArr } from "./Users/Jacob/OneDrive/Oppgaver/Adv JS Scrimba/studentsArr";
 //  ÆDVÆNS JavaSkriptering
 //
 // ---------FOR of--------------
