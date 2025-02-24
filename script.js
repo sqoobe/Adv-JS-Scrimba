@@ -333,7 +333,7 @@ function calculateClassAverage(studentsArr) {}
     We want to find out how much money was spent in 2023. 
 */
 
-const expensesAndRefunds = [
+/*const expensesAndRefunds = [
   { description: "Groceries", amount: 50, year: 2023 },
   { description: "Electronics", amount: -30, year: 2023 },
   { description: "Dinner", amount: 40, year: 2023 },
@@ -364,8 +364,115 @@ for (let i = 0; i < expensesAndRefunds.length; i++) {
 }
 
 console.log(`Total amount spent on items in 2023: $${totalSpent}`);
-// ---------------------------------------------------------------------
 
+*/
+
+// ---------Various Array methods--------------
+// ---------Various Array methods--------------
+// ---------Various Array methods--------------
+// ---------Various Array methods--------------
+
+const dailyStepsArr = [1000, 1200, 800, 1500, 1100, 1900, 1300];
+
+/*
+
+// .every() returns true if every item passes the test.
+const areAllOver10k = dailyStepsArr.every(function (stepCount) {
+  return stepCount >= 10000;
+});
+
+// .some() returns true if one or more items pass the test.
+const areSomeOver10k = dailyStepsArr.some(function (stepCount) {
+  return stepCount >= 10000;
+});
+
+const invoicesUSDArr = [201, 354, 26, 1299, 1400, 60, 76];
+
+// .find() returns the value of the first item that passes the test.
+const invoiceOver1k = invoicesUSDArr.find(function (invoice) {
+  return invoice > 1000;
+});
+
+// .findIndex() returns the index of the first item that passes the test.
+const invoiceIndexOver1k = invoicesUSDArr.findIndex(function (invoice) {
+  return invoice > 1000;
+});
+
+// .indexOf() gives us the index of a given item in the array.
+// console.log(invoicesUSDArr.indexOf(26))
+
+// .at() takes a positive or negative integer and returns the item at that index.
+// Negative integers count back from the end of the array.
+console.log(invoicesUSDArr.at(-2));
+
+*/
+
+// ---------------------------------------------------------------------
+// ---------string.replace and replaceAll--------------
+// ---------string.replace and replaceAll--------------
+// ---------string.replace and replaceAll--------------
+// ---------string.replace and replaceAll--------------
+
+/*
+const paragraph =
+  "js is the backbone of the internet. It was created in 1995. Before js, websites were so boring.";
+
+console.log(paragraph.replaceAll("js", "JS"));
+//JS is the backbone of the internet. It was created in 1995. Before js, websites were so boring.
+//JS is the backbone of the internet. It was created in 1995. Before JS, websites were so boring.
+
+*/
+
+// const sentence = "i went to Australia and i saw a shark";
+
+// /*
+// Challenge:
+//     1. Change the lowercase i’s to uppercase.
+// */
+
+// console.log(sentence.replaceAll("i", "I"));
+
+const sentence = "I love you with all my heart!";
+
+console.log(
+  sentence.replaceAll(/\b(love|heart)\b/g, function (match) {
+    return `${match} 💜`;
+  })
+);
+
+//love
+//heart
+//I undefined you with all my undefined!
+
+const paragraph =
+  "javaScript is the backbone of the internet. it was created in 1995. before JS, websites were so boring";
+
+/*
+Challenge:
+    1. Use replaceAll and regex to ensure the first 
+       character of each sentence is uppercase.
+       You will need to use a string method which converts 
+       characters to uppercase.
+*/
+console.log(
+  paragraph.replaceAll(/(?:^|\.\s)([A-Za-z])/g, function (match) {
+    return match.toUpperCase();
+  })
+);
+//JavaScript is the backbone of the internet. It was created in 1995. Before JS, websites were so boring
+
+// ---------Regex flags and constructor--------------
+// ---------Regex flags and constructor--------------
+// ---------Regex flags and constructor--------------
+const text = "Please switch off the WIFI before you leave.";
+const userInput = "wifi";
+
+const regex = /wifi/gi; //finds wifi and return true. g means global and i means case insensitive
+// const regex = new RegExp(userInput, "g");
+
+const doesMatch = regex.test(text); //boolean
+
+console.log(doesMatch);
 // ---------------------------------------------------------------------
 
 // ---------------------------------------------------------------------
