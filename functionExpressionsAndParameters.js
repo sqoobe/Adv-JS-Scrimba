@@ -187,6 +187,53 @@ function calculateTotalCost(itemsBoughtArr, discount = 10){
 
 console.log(calculateTotalCost(itemsBoughtArr, 20))
 */
+// // ---------Rest Parameters--------------
+// // ---------Rest Parameters--------------
+// // ---------Rest Parameters--------------
+// // ---------Rest Parameters--------------
+function setPermissionLevel(permissionLevel, ...names) {
+  // ...names er en rest parameter
+  // alle navn i rest parameteret blir til eget array
+  // bruker array method.forEach til å gå igjennom alle navn og console logge ut hvilke permissionlevel de får.
+
+  names.forEach((name) =>
+    console.log(`${name} now has ${permissionLevel} level access.`)
+  );
+}
+
+setPermissionLevel("admin", "Dave", "Sally", "Mike");
+
+// // ---------The Rest Parameter Challenge--------------
+// // ---------The Rest Parameter Challenge--------------
+// // ---------The Rest Parameter Challenge--------------
+// // ---------The Rest Parameter Challenge--------------
+function getLabelsHtml() {
+  /*
+    Challenge:
+    1. Add parameters.
+    2. Update the HTML template where you 
+       see **NAME**.
+    3. Return HTML template for each label.
+    */
+  // `<div class="label-card">
+  //     <p>Dear **NAME** </p>
+  //     <p>${text}</p>
+  //     <p>Best wishes,</p>
+  //     <p>${sender}</p>
+  // </div>`
+}
+
+const text = "Thank you for all your hard work throughout the year! 🙏🎁";
+const sender = "Tom";
+
+document.getElementById("labels-container").innerHTML = getLabelsHtml(
+  text,
+  sender,
+  { name: "Sally" },
+  { name: "Mike" },
+  { name: "Rob" },
+  { name: "Harriet" }
+);
 
 // ---------------------------------------------------------------------
 // ---------------------------------------------------------------------
