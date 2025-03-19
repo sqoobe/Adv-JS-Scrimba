@@ -1,4 +1,13 @@
-function getLabelsHtml() {
+function getLabelsHtml(text, sender, ...recievers) {
+  return recievers.map(
+    (reciever) =>
+      `<div class="label-card">
+         <p>Dear ${reciever.name} </p>
+         <p>${text}</p>
+         <p>Best wishes,</p>
+         <p>${sender}</p>
+     </div>`
+  );
   /*
 Challenge:
 1. Add parameters.
